@@ -1,2 +1,7 @@
 [build]
-  edge_functions = "netlify/edge-functions"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/jobs"
+  to = "/.netlify/functions/jobs"
+  status = 200
